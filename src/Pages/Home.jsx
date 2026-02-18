@@ -1,0 +1,233 @@
+import React, { useEffect, useRef, useState } from "react";
+
+import { useNavigate } from "react-router-dom";
+
+import Mentors from "../Components/Mentors";
+import Process from "../Components/Process";
+import Contact from "../Components/Contact";
+import Footer from "../Components/Footer";
+import NewNavbar from "../Components/NewNavbar";
+import CourseDetails from "../Components/CourseDetails";
+import Learn from "../Components/Learn";
+import Navbar from "../Components/Navbar";
+
+const Home = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
+
+  const whyRef = useRef(null);
+  const learnRef = useRef(null);
+  const instructorsRef = useRef(null);
+  const processRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 120;
+
+      const sections = [
+        { ref: whyRef, name: "why" },
+        { ref: learnRef, name: "learn" },
+        { ref: instructorsRef, name: "instructors" },
+        { ref: processRef, name: "process" },
+        { ref: contactRef, name: "contact" },
+      ];
+
+      let currentSection = "";
+
+      sections.forEach((section) => {
+        if (section.ref.current) {
+          const top = section.ref.current.offsetTop;
+          const height = section.ref.current.offsetHeight;
+
+          if (scrollPosition >= top && scrollPosition < top + height) {
+            currentSection = section.name;
+          }
+        }
+      });
+
+      if (currentSection) {
+        setActiveSection(currentSection);
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+        setActiveSection("");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToSection = (ref) => {
+    if (ref.current) {
+      window.scrollTo({
+        top: ref.current.offsetTop - 100, // navbar height adjust
+        behavior: "smooth",
+      });
+    }
+  };
+
+  return (
+    <>
+      {isScrolled && (
+        <NewNavbar
+          activeSection={activeSection}
+          scrollToSection={scrollToSection}
+          refs={{
+            why: whyRef,
+            learn: learnRef,
+            instructors: instructorsRef,
+            process: processRef,
+            contact: contactRef,
+          }}
+        />
+      )}
+
+      <div className="bg-[#FFFFFF]">
+        <Navbar />
+
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            {/* Left Content */}
+            <div>
+              <h1 className="text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
+                Artificial Intelligence and Machine Learning Certification
+                Program
+              </h1>
+
+              <ul className="mt-8 space-y-4">
+                <li className="flex items-start text-lg text-gray-700">
+                  <span className="mr-3 mt-1 text-red-500">•</span>
+                  Learn from IIT faculty and recognised industry experts
+                </li>
+
+                <li className="flex items-start text-lg text-gray-700">
+                  <span className="mr-3 mt-1 text-red-500">•</span>
+                  Learn real world AI and ML concepts and build a capstone
+                  project
+                </li>
+
+                <li className="flex items-start text-lg text-gray-700">
+                  <span className="mr-3 mt-1 text-red-500">•</span>
+                  Earn an E&ICT Academy, IIT Roorkee certificate to boost
+                  credibility and confidence
+                </li>
+              </ul>
+
+              <button
+                onClick={() => navigate("/signup")}
+                className="mt-8 bg-red-500 cursor-pointer hover:bg-red-600 transition duration-300 text-white text-lg font-semibold px-6 py-3 rounded-full shadow-md"
+              >
+                REGISTER NOW
+              </button>
+
+              <p className="mt-10 text-gray-500 text-lg">
+                <span className="font-bold text-gray-900">1.2K+</span> students
+                have already registered
+              </p>
+            </div>
+
+            {/* Right Image */}
+            <div className="flex justify-center lg:justify-end">
+              <img
+                src="/IIT.jpg"
+                alt="AI and ML Program"
+                className="w-full rounded-4xl max-w-md lg:max-w-lg object-contain"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* -------- */}
+        <div className="bg-white border-y border-gray-200">
+          <div className="max-w-7xl mx-auto px-6 lg:px-2 py-2">
+            <div
+              className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 
+                    text-center divide-y md:divide-y-0 md:divide-x divide-gray-200"
+            >
+              <div className="py-4">
+                <p className="text-sm text-gray-500 uppercase tracking-wide">
+                  Qualifier Test Date
+                </p>
+                <p className="text-lg font-semibold text-gray-900 mt-1">
+                  February 15, 2026
+                </p>
+              </div>
+
+              <div className="py-4">
+                <p className="text-sm text-gray-500 uppercase tracking-wide">
+                  Course Duration
+                </p>
+                <p className="text-lg font-semibold text-gray-900 mt-1">
+                  6 Months
+                </p>
+              </div>
+
+              <div className="py-4">
+                <p className="text-sm text-gray-500 uppercase tracking-wide">
+                  Time Commitment
+                </p>
+                <p className="text-lg font-semibold text-gray-900 mt-1">
+                  8-10 Hours / Week
+                </p>
+              </div>
+
+              <div className="py-4">
+                <p className="text-sm text-gray-500 uppercase tracking-wide">
+                  Eligibility
+                </p>
+                <p className="text-lg font-semibold text-gray-900 mt-1">
+                  12th Pass and Above
+                </p>
+              </div>
+
+              <div className="py-4">
+                <p className="text-sm text-gray-500 uppercase tracking-wide">
+                  Learning Mode
+                </p>
+                <p className="text-lg font-semibold text-gray-900 mt-1">
+                  Online
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ---- */}
+        <div ref={whyRef}>
+          <CourseDetails />
+        </div>
+
+        {/* ----------- */}
+        <div ref={learnRef}>
+          <Learn />
+        </div>
+
+        {/* --------- */}
+
+        {/* ----------- */}
+        <div ref={instructorsRef}>
+          <Mentors />
+        </div>
+
+        {/* ---------- */}
+        <div ref={processRef}>
+          <Process />
+        </div>
+
+        {/* ---------- */}
+        <div ref={contactRef}>
+          <Contact />
+        </div>
+
+        {/* --------- */}
+        <Footer />
+      </div>
+    </>
+  );
+};
+
+export default Home;
