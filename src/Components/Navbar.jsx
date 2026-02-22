@@ -10,11 +10,30 @@ const Navbar = () => {
       <header className="sticky md:relative top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 lg:px-12">
           <nav className="flex items-center justify-between h-16 md:h-20">
-
             {/* Logo */}
-            <h1 className="text-2xl md:text-3xl bg-red-500 text-white font-bold px-2 py-1 tracking-tight ">
-              upDate
-            </h1>
+
+            <div className="flex gap-2 items-center justify-center flex-wrap">
+              <img
+                src="/update.png"
+                className="w-32 object-contain"
+                alt="Update Logo"
+              />
+              <img
+                src="/Abhi.jpeg"
+                className="w-45 object-contain"
+                alt="Abhi Logo"
+              />
+              <img
+                src="/ISO.png"
+                className="w-15 object-contain "
+                alt="ISO Logo"
+              />
+              <img
+                src="/DPIIT.png"
+                className="w-32 object-contain"
+                alt="DPIIT Logo"
+              />
+            </div>
 
             {/* Desktop Button */}
             <button
@@ -27,7 +46,6 @@ const Navbar = () => {
             >
               REGISTER NOW
             </button>
-
           </nav>
         </div>
       </header>

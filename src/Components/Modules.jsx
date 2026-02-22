@@ -12,7 +12,7 @@ const Modules = () => {
 
   return (
     <>
-      <div className="max-w-6xl mx-auto border border-gray-200 rounded-2xl overflow-hidden my-5">
+      <div className="max-w-6xl mx-auto border border-gray-200 rounded-2xl overflow-hidden my-5 ">
         {/* Module 1 */}
         <button
           onClick={() => setOpen1(!open1)}

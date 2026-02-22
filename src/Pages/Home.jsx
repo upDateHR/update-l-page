@@ -10,6 +10,7 @@ import NewNavbar from "../Components/NewNavbar";
 import CourseDetails from "../Components/CourseDetails";
 import Learn from "../Components/Learn";
 import Navbar from "../Components/Navbar";
+import QualifierTest from "../Components/QualifierTest";
 
 const Home = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -20,6 +21,7 @@ const Home = () => {
   const instructorsRef = useRef(null);
   const processRef = useRef(null);
   const contactRef = useRef(null);
+ const qualifierRef = useRef(null);
 
   const navigate = useNavigate();
 
@@ -32,6 +34,7 @@ const Home = () => {
         { ref: learnRef, name: "learn" },
         { ref: instructorsRef, name: "instructors" },
         { ref: processRef, name: "process" },
+        { ref: qualifierRef, name: "qualifier" },
         { ref: contactRef, name: "contact" },
       ];
 
@@ -81,6 +84,7 @@ const Home = () => {
             learn: learnRef,
             instructors: instructorsRef,
             process: processRef,
+            qualifier: qualifierRef,
             contact: contactRef,
           }}
         />
@@ -93,28 +97,25 @@ const Home = () => {
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             {/* Left Content */}
             <div>
-              <h1 className="text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
-                Artificial Intelligence and Machine Learning Certification
-                Program
+              <h1 className="text-4xl lg:text-[38px] font-bold leading-tight text-gray-900">
+                Advanced Certification Program in Data Analytics with AI and Gen
+                AI + Internship & Placement (100%)
               </h1>
 
               <ul className="mt-8 space-y-4">
                 <li className="flex items-start text-lg text-gray-700">
                   <span className="mr-3 mt-1 text-red-500">•</span>
-                  Learn from IIT faculty and recognised industry experts
+                  Learn from Top Industry experts like JP Morgen, Mckinsey &
+                  Company, BCG, Jio and many more.
                 </li>
 
                 <li className="flex items-start text-lg text-gray-700">
                   <span className="mr-3 mt-1 text-red-500">•</span>
-                  Learn real world AI and ML concepts and build a capstone
-                  project
+                  Master Python, SQL, analytics, and modern AI + multi-agent
+                  workflows-hands-on with Guaranted Internship
                 </li>
 
-                <li className="flex items-start text-lg text-gray-700">
-                  <span className="mr-3 mt-1 text-red-500">•</span>
-                  Earn an E&ICT Academy, IIT Roorkee certificate to boost
-                  credibility and confidence
-                </li>
+                
               </ul>
 
               <button
@@ -125,15 +126,15 @@ const Home = () => {
               </button>
 
               <p className="mt-10 text-gray-500 text-lg">
-                <span className="font-bold text-gray-900">1.2K+</span> students
-                have already registered
+                <span className="font-bold text-gray-900">300+</span> students
+                have already registered for Internship
               </p>
             </div>
 
             {/* Right Image */}
             <div className="flex justify-center lg:justify-end">
               <img
-                src="/IIT.jpg"
+                src="/raipur.jpg"
                 alt="AI and ML Program"
                 className="w-full rounded-4xl max-w-md lg:max-w-lg object-contain"
               />
@@ -162,7 +163,7 @@ const Home = () => {
                   Course Duration
                 </p>
                 <p className="text-lg font-semibold text-gray-900 mt-1">
-                  6 Months
+                  3  Months (1+2)
                 </p>
               </div>
 
@@ -216,6 +217,11 @@ const Home = () => {
         {/* ---------- */}
         <div ref={processRef}>
           <Process />
+        </div>
+
+        {/* ---------- */}
+        <div ref={qualifierRef}>
+          <QualifierTest />
         </div>
 
         {/* ---------- */}

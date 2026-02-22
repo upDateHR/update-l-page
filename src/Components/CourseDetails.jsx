@@ -10,14 +10,18 @@ const CourseDetails = () => {
           {/* Left Content */}
           <div>
             <h1 className="text-2xl lg:text-4xl font-bold leading-tight text-gray-900">
-              Why choose this course?
+              Why choose this Program?
             </h1>
 
             <h3 className="text-4xl py-3 lg:text-xl font-bold leading-tight text-red-500">
-              A premier pathway to mastering AI & ML, designed by IIT experts
+              Corporate KIT + Course Certificate, Offer Letter, LOR, Job Offer
+              Letter.
             </h3>
 
-            <button onClick={() => navigate("/signup")} className="mt-8 bg-red-500 hover:bg-red-600 transition duration-300 text-white text-lg font-semibold px-6 py-3 rounded-full shadow-md cursor-pointer">
+            <button
+              onClick={() => navigate("/signup")}
+              className="mt-8 bg-red-500 hover:bg-red-600 transition duration-300 text-white text-lg font-semibold px-6 py-3 rounded-full shadow-md cursor-pointer"
+            >
               REGISTER NOW
             </button>
           </div>
@@ -38,22 +42,11 @@ const CourseDetails = () => {
               {/* Box 1 */}
               <div className="bg-white p-5 rounded-2xl shadow-sm hover:shadow-md transition duration-300">
                 <h2 className="text-xl font-semibold text-gray-900">
-                  Certification from E&ICT Academy, IIT Roorkee
+                  Certification from upDate
                 </h2>
                 <p className="mt-3 text-gray-600">
-                  Earn a Certificate of Completion from E&ICT Academy, IIT
-                  Roorkee, recognizing your learning and achievement.
-                </p>
-              </div>
-
-              {/* Box 2 */}
-              <div className="bg-white p-5 rounded-2xl shadow-sm hover:shadow-md transition duration-300">
-                <h2 className="text-xl font-semibold text-gray-900">
-                  Campus Immersion
-                </h2>
-                <p className="mt-3 text-gray-600">
-                  Optional 3-day campus immersion to interact with
-                  faculty/experts, peers, and the institute ecosystem.
+                  Earn a Certificate of Completion from upDate, recognizing your
+                  learning and achievement.
                 </p>
               </div>
 
@@ -63,49 +56,50 @@ const CourseDetails = () => {
                   Future-Ready Career Path
                 </h2>
                 <p className="mt-3 text-gray-600">
-                  Build in-demand AI & ML skills through hands-on learning
-                  guided by expert faculty and industry practitioners.
+                  Enter the fast-evolving AI era by mastering Data Analytics
+                  with AI through hands-on learning guided by leading.
                 </p>
               </div>
 
               {/* Box 4 */}
               <div className="bg-white p-5 rounded-2xl shadow-sm hover:shadow-md transition duration-300">
                 <h2 className="text-xl font-semibold text-gray-900">
-                  Industry-Aligned Curriculum
+                  Advanced Industry Curriculum
                 </h2>
                 <p className="mt-3 text-gray-600">
-                  Learn cutting-edge AI & Machine Learning through interactive
-                  sessions, coding exercises, and structured evaluations.
+                  Access cutting-edge business analysis content, engaging
+                  simulations, and practical evaluations. Focus on real-time
+                  project implementation for hands-on mastery.
                 </p>
               </div>
 
               {/* Box 5 */}
               <div className="bg-white p-5 rounded-2xl shadow-sm hover:shadow-md transition duration-300">
                 <h2 className="text-xl font-semibold text-gray-900">
-                  Project-Based Learning
+                  Project-Based Learning Model
                 </h2>
                 <p className="mt-3 text-gray-600">
-                  Work on hands-on projects across Python, data handling, ML,
-                  and Generative AI, apply LLM concepts, LangChain workflows,
-                  and deployment to solve real-world problems.
+                  Immerse yourself in hands-on projects covering data fundamentals, AI-powered analytics, and intelligent workflow design. Apply Python and modern AI tools to solve real-world business challenges with confidence.
+
+                  
                 </p>
               </div>
 
               {/* Box 6 */}
               <div className="bg-white p-5 rounded-2xl shadow-sm hover:shadow-md transition duration-300">
                 <h2 className="text-xl font-semibold text-gray-900">
-                  Career Support (via upDate)
+                  Placement Opportunities
                 </h2>
                 <p className="mt-3 text-gray-600">
-                  Resume reviews, career coaching, and placement assistance to
-                  support your job search (eligibility: 65% attendance & 70%
-                  overall marks).
+                  Receive revievvs, career coaching, and placement support to
+                  land your dream role. (Eligibility: 70% attendance & overall
+                  30% marks; offered by upDate)
                 </p>
               </div>
             </div>
           </div>
           <p className="mt-10 text-black-500 text-lg flex justify-center italic">
-            Certificate Eligibility: Minimum 65% overall attendance and 35% in
+            Certificate Eligibility: Minimum 70% overall attendance and 30% in
             the cumulative evaluation score.
           </p>
         </div>

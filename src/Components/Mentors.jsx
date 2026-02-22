@@ -1,126 +1,64 @@
-import React from "react";
-
 const Mentors = () => {
+  const mentors = [
+    { name: "Biplab Maity", role: "Senior Manager", image: "/Raksha.png" },
+    { name: "Shubham Sumanl", role: "Publications", image: "/Raksha.png" },
+    { name: "Akanksha Singh", role: "-", image: "/Raksha.png" },
+    { name: "Muieeb Alam", role: "Industry Mentor", image: "/Raksha.png" },
+    { name: "Stuti Nayak Panda", role: "-", image: "/Raksha.png" },
+  ];
+
+  const infiniteMentors = [...mentors, ...mentors]; // duplicate for infinite effect
+
   return (
-    <div>
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16 bg-[#FFFFFF]">
-        <h1 className="text-2xl flex justify-center lg:text-4xl font-bold leading-tight text-gray-900">
-          Our Instructors and Industry Mentors
-        </h1>
+    <section className="bg-gray-50 py-20">
+      <div className="max-w-7xl mx-auto px-6">
+        <h2 className="text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-14">
+          Meet Our Industry Experts
+        </h2>
 
-        <div className="max-w-6xl mx-auto px-1 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Box 1 */}
-            <div className="bg-white rounded-2xl shadow-md overflow-hidden">
-              <div className="flex flex-col md:flex-row p-6 gap-6">
-                <div className="w-32 aspect-square">
-                  <img
-                    src="/Raksha.png"
-                    alt="AI Program"
-                    className="w-full h-full object-cover rounded-xl"
-                  />
-                </div>
-
-                <div className="md:w-2/3 flex flex-col justify-center">
-                  <h2 className="text-sm font-bold text-gray-900">
-                    Prof. Raksha Sharma
-                  </h2>
-                  <p className="mt-1 text-gray-600 leading-relaxed text-sm">
-                    Associate Professor, IIT Roorkee
-                  </p>
-                  <p className="mt-1 font-semibold text-blue-600 leading-relaxed text-sm">
-                    <a href="#">Linkedin</a>
-                  </p>
-                </div>
-              </div>
-
-              <div className="p-6 pt-0">
-                <p className="text-gray-700 leading-relaxed text-sm">
-                  Build real-world AI applications and strengthen your
-                  portfolio.
+        <div className="overflow-hidden">
+          {/* Hover here pauses entire slider */}
+          <div className="slider-track flex gap-8">
+            {infiniteMentors.map((mentor, i) => (
+              <div
+                key={i}
+                className="w-[260px] h-[280px] bg-white rounded-3xl  flex-shrink-0 flex flex-col items-center justify-center text-center p-6"
+              >
+                <img
+                  src={mentor.image}
+                  alt={mentor.name}
+                  className="w-24 h-24 rounded-full object-cover mb-5 border-4 border-gray-100"
+                />
+                <h3 className="font-semibold text-lg text-gray-900">
+                  {mentor.name}
+                </h3>
+                <p className="text-sm text-gray-500 mt-2">
+                  {mentor.role}
                 </p>
-
-                <button className="mt-2 text-red-500 font-semibold hover:underline">
-                  Read More →
-                </button>
               </div>
-            </div>
-
-            {/* Box 2 */}
-            <div className="bg-white rounded-2xl shadow-md overflow-hidden">
-              <div className="flex flex-col md:flex-row p-6 gap-6">
-                <div className="w-32 aspect-square">
-                  <img
-                    src="/Sumit.png"
-                    alt="AI Program"
-                    className="w-full h-full object-cover rounded-xl"
-                  />
-                </div>
-
-                <div className="md:w-2/3 flex flex-col justify-center">
-                  <h2 className="text-sm font-bold text-gray-900">
-                    Prof. Raksha Sharma
-                  </h2>
-                  <p className="mt-1 text-gray-600 leading-relaxed text-sm">
-                    Associate Professor, IIT Roorkee
-                  </p>
-                  <p className="mt-1 font-semibold text-blue-600 leading-relaxed text-sm">
-                    <a href="#">Linkedin</a>
-                  </p>
-                </div>
-              </div>
-
-              <div className="p-6 pt-0">
-                <p className="text-gray-700 leading-relaxed text-sm">
-                  Build real-world AI applications and strengthen your
-                  portfolio.
-                </p>
-
-                <button className="mt-2 text-red-500 font-semibold hover:underline">
-                  Read More →
-                </button>
-              </div>
-            </div>
-
-            {/* Box 3 */}
-            <div className="bg-white rounded-2xl shadow-md overflow-hidden">
-              <div className="flex flex-col md:flex-row p-6 gap-6">
-                <div className="w-32 aspect-square">
-                  <img
-                    src="/Ritesh.png"
-                    alt="AI Program"
-                    className="w-full h-full object-cover rounded-xl"
-                  />
-                </div>
-
-                <div className="md:w-2/3 flex flex-col justify-center">
-                  <h2 className="text-sm font-bold text-gray-900">
-                    Prof. Raksha Sharma
-                  </h2>
-                  <p className="mt-1 text-gray-600 leading-relaxed text-sm">
-                    Associate Professor, IIT Roorkee
-                  </p>
-                  <p className="mt-1 font-semibold text-blue-600 leading-relaxed text-sm">
-                    <a href="#">Linkedin</a>
-                  </p>
-                </div>
-              </div>
-
-              <div className="p-6 pt-0">
-                <p className="text-gray-700 leading-relaxed text-sm">
-                  Build real-world AI applications and strengthen your
-                  portfolio.
-                </p>
-
-                <button className="mt-2 text-red-500 font-semibold hover:underline">
-                  Read More →
-                </button>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
-    </div>
+
+      {/* Animation CSS */}
+      <style>
+        {`
+          .slider-track {
+            animation: scroll 20s linear infinite;
+          }
+
+          .slider-track:hover {
+            animation-play-state: paused;
+          }
+
+          @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+        `}
+      </style>
+    </section>
   );
 };
 

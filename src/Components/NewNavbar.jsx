@@ -6,8 +6,8 @@ const NewNavbar = ({ activeSection, scrollToSection, refs }) => {
     { id: "learn", label: "What will you learn?" },
     { id: "instructors", label: "Instructors" },
     { id: "process", label: "Admission Process" },
+    { id: "qualifier", label: "QualifierTest" },
     { id: "contact", label: "Contact Us" },
-    { id: "about", label: "About Us" },
     { id: "about", label: "About Us" },
   ];
 
@@ -75,9 +75,9 @@ const NewNavbar = ({ activeSection, scrollToSection, refs }) => {
           onWheel={handleWheel}
           onMouseDown={handleMouseDown}
           onMouseLeave={handleMouseLeave}
-          onMouseUp={handleMouseUp}
+          onMouseUp={handleMouseUp} 
           onMouseMove={handleMouseMove}
-          className="flex gap-4 md:gap-6 overflow-x-auto whitespace-nowrap scroll-smooth no-scrollbar flex-1 cursor-grab active:cursor-grabbing"
+          className="flex gap-0 md:gap-0 overflow-x-auto whitespace-nowrap scroll-smooth no-scrollbar flex-1 cursor-grab active:cursor-grabbing"
         >
           {navItems.map((item) => (
             <div

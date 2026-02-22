@@ -39,48 +39,50 @@ const Learn = () => {
       </div>
 
       {/* <div className="bg-gradient-to-b from-white via-red-100 to-red-300 pb-4"> */}
-        <div className=" px-6 lg:px-12 py-6">
-          <h1 className="text-xl lg:text-3xl font-bold text-gray-900">
-            Course Details
-          </h1>
-        </div>
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-1">
-          <div
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 
+      <div className=" px-6 lg:px-12 py-6">
+        <h1 className="text-xl lg:text-3xl font-bold text-gray-900">
+          Course Details
+        </h1>
+      </div>
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-1">
+        <div
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 
                     text-center md:divide-x divide-gray-200"
-          >
-            <div className="py-4">
-              <p className="text-sm text-gray-500 uppercase tracking-wide">
-                Duration
-              </p>
-              <p className="text-lg font-semibold text-gray-900 mt-1">
-                6 Months
-              </p>
-            </div>
+        >
+          <div className="py-4">
+            <p className="text-sm text-gray-500 uppercase tracking-wide">
+              Duration
+            </p>
+            <p className="text-lg font-semibold text-gray-900 mt-1">3 Months</p>
+          </div>
 
-            <div className="py-4">
-              <p className="text-sm text-gray-500 uppercase tracking-wide">
-                Course Mode
-              </p>
-              <p className="text-lg font-semibold text-gray-900 mt-1">Online</p>
-            </div>
+          <div className="py-4">
+            <p className="text-sm text-gray-500 uppercase tracking-wide">
+              Course Mode
+            </p>
+            <p className="text-lg font-semibold text-gray-900 mt-1">Online</p>
+          </div>
 
-            <div className="py-4">
-              <p className="text-sm text-gray-500 uppercase tracking-wide">
-                Certification
-              </p>
-              <p className="text-lg font-semibold text-gray-900 mt-1">
-                from E&ICT Academy, IIT Roorkee
-              </p>
-            </div>
+          <div className="py-4">
+            <p className="text-sm text-gray-500 uppercase tracking-wide">
+              Certification
+            </p>
+            <p className="text-lg font-semibold text-gray-900 mt-1">
+              from upDate
+            </p>
           </div>
         </div>
 
         <Modules />
 
-        <button onClick={() => navigate("/signup")} className="mt-8 bg-red-500 hover:bg-red-600 transition duration-300 text-white text-lg font-semibold px-6 py-3 rounded-full shadow-md flex justify-center m-auto cursor-pointer">
+        <button
+          onClick={() => navigate("/signup")}
+          className="mt-8 bg-red-500 hover:bg-red-600 transition duration-300 text-white text-lg font-semibold px-6 py-3 rounded-full shadow-md flex mb-10 justify-center m-auto cursor-pointer"
+        >
           REGISTER NOW
         </button>
+      </div>
+
       {/* </div> */}
     </>
   );
