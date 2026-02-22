@@ -6,7 +6,7 @@ const Learn = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16 bg-white">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 pt-16 bg-white">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
@@ -44,26 +44,26 @@ const Learn = () => {
           Course Details
         </h1>
       </div>
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-1">
+      <div className="max-w-7xl  px-6 lg:px-12 py-1 ">
         <div
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 
                     text-center md:divide-x divide-gray-200"
         >
-          <div className="py-4">
+          <div className="py-4 md:text-center text-left">
             <p className="text-sm text-gray-500 uppercase tracking-wide">
               Duration
             </p>
             <p className="text-lg font-semibold text-gray-900 mt-1">3 Months</p>
           </div>
 
-          <div className="py-4">
+          <div className="py-4 md:text-center text-left">
             <p className="text-sm text-gray-500 uppercase tracking-wide">
               Course Mode
             </p>
             <p className="text-lg font-semibold text-gray-900 mt-1">Online</p>
           </div>
 
-          <div className="py-4">
+          <div className="py-4 md:text-center text-left">
             <p className="text-sm text-gray-500 uppercase tracking-wide">
               Certification
             </p>

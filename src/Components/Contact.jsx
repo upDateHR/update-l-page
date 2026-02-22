@@ -3,12 +3,12 @@ import React from "react";
 const Contact = () => {
   return (
     <>
-      <div className="max-w-7xl mx-auto px-6 lg:px-1 py-16 bg-[#FFFFFF]">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16 bg-[#FFFFFF]">
         <h1 className="text-2xl flex justify-center lg:text-4xl font-bold leading-tight text-gray-900">
           Contact Us
         </h1>
 
-        <div className="max-w-6xl mx-auto px-6 pt-12 pb-0">
+        <div className="max-w-6xl mx-auto pt-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Box 1 */}
             <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition duration-300 text-center border border-gray-300">
@@ -34,7 +34,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-6xl mx-auto px-6 py-12">
+        <div className="max-w-6xl mx-auto py-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* 1 */}
             <div

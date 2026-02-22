@@ -8,10 +8,10 @@ const Process = () => {
           Admission Process
         </h1>
 
-        <div className="max-w-5xl mx-auto px-6 py-12">
-          <div className="flex items-center justify-center">
+        <div className="max-w-5xl mx-auto ">
+          <div className="hidden md:flex items-center justify-center px-6 py-12">
             {/* Circle 1 */}
-            <div className="w-20 h-20 rounded-full bg-red-200 flex items-center justify-center text-white font-bold shadow-md">
+            <div className="w-20 h-20 rounded-full bg-red-300 flex items-center justify-center text-white font-bold shadow-md">
               1
             </div>
 
@@ -19,7 +19,7 @@ const Process = () => {
             <div className="w-72 border-t-2 border-dashed border-gray-400"></div>
 
             {/* Circle 2 */}
-            <div className="w-20 h-20 rounded-full bg-red-200 flex items-center justify-center text-white font-bold shadow-md">
+            <div className="w-20 h-20 rounded-full bg-red-300 flex items-center justify-center text-white font-bold shadow-md">
               2
             </div>
 
@@ -27,7 +27,7 @@ const Process = () => {
             <div className="w-72 border-t-2 border-dashed border-gray-400"></div>
 
             {/* Circle 3 */}
-            <div className="w-20 h-20 rounded-full bg-red-200 flex items-center justify-center text-white font-bold shadow-md">
+            <div className="w-20 h-20 rounded-full bg-red-300 flex items-center justify-center text-white font-bold shadow-md">
               3
             </div>
           </div>

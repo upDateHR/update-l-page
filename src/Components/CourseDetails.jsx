@@ -5,7 +5,7 @@ const CourseDetails = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 pt-16">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
@@ -36,7 +36,7 @@ const CourseDetails = () => {
           </div>
         </div>
 
-        <div className="py-16">
+        <div className="pt-16">
           <div className="max-w-7xl mx-auto ">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Box 1 */}
@@ -98,7 +98,7 @@ const CourseDetails = () => {
               </div>
             </div>
           </div>
-          <p className="mt-10 text-black-500 text-lg flex justify-center italic">
+          <p className="mt-10 text-black-500 text-lg flex justify-center text-center italic">
             Certificate Eligibility: Minimum 70% overall attendance and 30% in
             the cumulative evaluation score.
           </p>

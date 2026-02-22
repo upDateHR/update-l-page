@@ -16,9 +16,11 @@ const Modules = () => {
         {/* Module 1 */}
         <button
           onClick={() => setOpen1(!open1)}
-          className="w-full flex items-center justify-between px-6 py-4 bg-white hover:bg-gray-50 transition"
+          className="w-full flex items-start sm:items-center justify-between 
+px-4 sm:px-6 py-4 
+bg-white hover:bg-gray-50 transition"
         >
-          <h2 className="text-lg font-bold text-gray-900">
+          <h2 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 text-left leading-snug">
             Module 1: Python Programming Fundamentals and Flow Control (3 Weeks)
           </h2>
 
@@ -28,6 +30,8 @@ const Modules = () => {
             }`}
           />
         </button>
+
+        
 
         <div
           className={`px-6 overflow-hidden transition-all duration-300 bg-white ${
@@ -53,9 +57,11 @@ const Modules = () => {
         {/* Module 2 */}
         <button
           onClick={() => setOpen2(!open2)}
-          className="w-full flex items-center justify-between px-6 py-4 bg-white hover:bg-gray-50 transition"
+          className="w-full flex items-start sm:items-center justify-between 
+px-4 sm:px-6 py-4 
+bg-white hover:bg-gray-50 transition"
         >
-          <h2 className="text-lg font-bold text-gray-900">
+          <h2 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 text-left leading-snug">
             Module 2: The Data Handling Toolkit: NumPy and Pandas (3 Weeks)
           </h2>
 
@@ -96,9 +102,11 @@ const Modules = () => {
         {/* Module 3 */}
         <button
           onClick={() => setOpen3(!open3)}
-          className="w-full flex items-center justify-between px-6 py-4 bg-white hover:bg-gray-50 transition"
+          className="w-full flex items-start sm:items-center justify-between 
+px-4 sm:px-6 py-4 
+bg-white hover:bg-gray-50 transition"
         >
-          <h2 className="text-lg font-bold text-gray-900">
+          <h2 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 text-left leading-snug">
             Module 3: Statistical Thinking, Data Preparation, and ML Workflow (4
             Weeks)
           </h2>
@@ -143,9 +151,11 @@ const Modules = () => {
         {/* Module 4 */}
         <button
           onClick={() => setOpen4(!open4)}
-          className="w-full flex items-center justify-between px-6 py-4 bg-white hover:bg-gray-50 transition"
+          className="w-full flex items-start sm:items-center justify-between 
+px-4 sm:px-6 py-4 
+bg-white hover:bg-gray-50 transition"
         >
-          <h2 className="text-lg font-bold text-gray-900">
+          <h2 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 text-left leading-snug">
             Module 4: Core Supervised Learning: Regression and Classification (5
             Weeks)
           </h2>
@@ -187,9 +197,11 @@ const Modules = () => {
         {/* Module 5 */}
         <button
           onClick={() => setOpen5(!open5)}
-          className="w-full flex items-center justify-between px-6 py-4 bg-white hover:bg-gray-50 transition"
+          className="w-full flex items-start sm:items-center justify-between 
+px-4 sm:px-6 py-4 
+bg-white hover:bg-gray-50 transition"
         >
-          <h2 className="text-lg font-bold text-gray-900">
+          <h2 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 text-left leading-snug">
             Module 5: Advanced ML concepts and Unsupervised Learning (5 Weeks)
           </h2>
 
@@ -230,9 +242,11 @@ const Modules = () => {
         {/* Module 6 */}
         <button
           onClick={() => setOpen6(!open6)}
-          className="w-full flex items-center justify-between px-6 py-4 bg-white hover:bg-gray-50 transition"
+          className="w-full flex items-start sm:items-center justify-between 
+px-4 sm:px-6 py-4 
+bg-white hover:bg-gray-50 transition"
         >
-          <h2 className="text-lg font-bold text-gray-900">
+          <h2 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 text-left leading-snug">
             Module 6: Advanced Generative AI Concepts and Tools (4 Weeks)
           </h2>
 
@@ -276,9 +290,11 @@ const Modules = () => {
         {/* Module 7 */}
         <button
           onClick={() => setOpen7(!open7)}
-          className="w-full flex items-center justify-between px-6 py-4 bg-white hover:bg-gray-50 transition"
+          className="w-full flex items-start sm:items-center justify-between 
+px-4 sm:px-6 py-4 
+bg-white hover:bg-gray-50 transition"
         >
-          <h2 className="text-lg font-bold text-gray-900">
+          <h2 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 text-left leading-snug">
             Module 7: Capstone Project and Final Presentation (2 Weeks)
           </h2>
 
