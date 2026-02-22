@@ -15,7 +15,7 @@ const Navbar = () => {
             <div className="flex gap-2 items-center justify-center flex-wrap">
               <img
                 src="/update.png"
-                className="w-16 md:32 object-contain"
+                className="w-16 md:w-30 object-contain"
                 alt="Update Logo"
               />
               <img
@@ -30,7 +30,7 @@ const Navbar = () => {
               />
               <img
                 src="/DPIIT.png"
-                className="w-19 md:32 object-contain"
+                className="w-19 md:w-30 object-contain"
                 alt="DPIIT Logo"
               />
             </div>
