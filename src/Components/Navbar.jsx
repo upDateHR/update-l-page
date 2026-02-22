@@ -15,22 +15,22 @@ const Navbar = () => {
             <div className="flex gap-2 items-center justify-center flex-wrap">
               <img
                 src="/update.png"
-                className="w-32 object-contain"
+                className="w-16 md:32 object-contain"
                 alt="Update Logo"
               />
               <img
                 src="/Abhi.jpeg"
-                className="w-45 object-contain"
+                className="w-22 md:w-45 object-contain"
                 alt="Abhi Logo"
               />
               <img
                 src="/ISO.png"
-                className="w-15 object-contain "
+                className="w-10 md:w-15 object-contain "
                 alt="ISO Logo"
               />
               <img
                 src="/DPIIT.png"
-                className="w-32 object-contain"
+                className="w-19 md:32 object-contain"
                 alt="DPIIT Logo"
               />
             </div>
