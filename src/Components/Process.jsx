@@ -3,7 +3,7 @@ import React from "react";
 const Process = () => {
   return (
     <>
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16 bg-[#FFFFFF]">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 md:py-16 py-8 bg-[#FFFFFF]">
         <h1 className="text-2xl flex justify-center lg:text-4xl font-bold leading-tight text-gray-900">
           Admission Process
         </h1>
@@ -33,7 +33,7 @@ const Process = () => {
           </div>
         </div>
 
-        <div className="max-w-6xl mx-auto px-1 py-12">
+        <div className="max-w-6xl mx-auto px-1 md:py-12 py-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Card 1 */}
             <div className="bg-white rounded-4xl shadow-md p-6 flex flex-col gap-2 hover:shadow-lg transition duration-300">

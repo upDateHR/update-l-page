@@ -1,5 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 const CourseDetails = () => {
   const navigate = useNavigate();
@@ -8,21 +10,31 @@ const CourseDetails = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 pt-16">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
-          <div>
+          <div className="md:text-left text-center">
             <h1 className="text-2xl lg:text-4xl font-bold leading-tight text-gray-900">
               Why choose this Program?
             </h1>
 
-            <h3 className="text-4xl py-3 lg:text-xl font-bold leading-tight text-red-500">
+            <h3 className="text-lg md:text-4xl py-3 lg:text-xl font-bold leading-tight text-red-500">
               Corporate KIT + Course Certificate, Offer Letter, LOR, Job Offer
               Letter.
             </h3>
 
             <button
               onClick={() => navigate("/signup")}
-              className="mt-8 bg-red-500 hover:bg-red-600 transition duration-300 text-white text-lg font-semibold px-6 py-3 rounded-full shadow-md cursor-pointer"
+              className="mt-8 bg-red-500 hover:bg-red-600 
+  transition duration-300 
+  text-white text-lg font-semibold 
+  px-6 py-3 rounded-full shadow-md 
+  flex items-center gap-3 hidden md:flex"
             >
               REGISTER NOW
+              <span className="w-6 h-6 flex items-center justify-center rounded-full bg-white">
+                <FontAwesomeIcon
+                  icon={faArrowDown}
+                  className="text-red-500 text-sm rotate-220"
+                />
+              </span>
             </button>
           </div>
 
@@ -79,9 +91,10 @@ const CourseDetails = () => {
                   Project-Based Learning Model
                 </h2>
                 <p className="mt-3 text-gray-600">
-                  Immerse yourself in hands-on projects covering data fundamentals, AI-powered analytics, and intelligent workflow design. Apply Python and modern AI tools to solve real-world business challenges with confidence.
-
-                  
+                  Immerse yourself in hands-on projects covering data
+                  fundamentals, AI-powered analytics, and intelligent workflow
+                  design. Apply Python and modern AI tools to solve real-world
+                  business challenges with confidence.
                 </p>
               </div>
 

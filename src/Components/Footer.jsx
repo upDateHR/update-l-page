@@ -12,13 +12,11 @@ const Footer = () => {
         {/* Left Side */}
         <div className="text-xs sm:text-sm text-gray-600 space-y-2">
           <p>
-            © {new Date().getFullYear()} Nolan Edutech Private Limited. All
-            rights reserved.
+            
+
+            Copyright © {new Date().getFullYear()} upDate is a part of upDt Education Technology Private Limited All rights reserved 
           </p>
-          <p className="leading-relaxed">
-            Incubex HSR21, 5th Main Rd, Sector 6, HSR Layout, Bengaluru,
-            Karnataka 560102.
-          </p>
+          
         </div>
 
         {/* Right Side */}

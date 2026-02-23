@@ -1,9 +1,12 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 const Contact = () => {
   return (
     <>
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16 bg-[#FFFFFF]">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-8 md:py-16 bg-[#FFFFFF]">
         <h1 className="text-2xl flex justify-center lg:text-4xl font-bold leading-tight text-gray-900">
           Contact Us
         </h1>
@@ -12,6 +15,10 @@ const Contact = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Box 1 */}
             <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition duration-300 text-center border border-gray-300">
+              <FontAwesomeIcon
+                icon={faWhatsapp}
+                className="text-red-500 text-5xl"
+              />
               <h2 className="text-2xl font-bold text-gray-900">WhatsApp us</h2>
               <p className="mt-4 text-gray-900 leading-relaxed">
                 For any queries, you can Whatsapp us at{" "}
@@ -23,6 +30,10 @@ const Contact = () => {
 
             {/* Box 2 */}
             <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition duration-300 text-center border border-gray-300">
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                className="text-red-500 text-5xl"
+              />
               <h2 className="text-2xl font-bold text-gray-900">Email us</h2>
               <p className="mt-4 text-gray-900 leading-relaxed">
                 For any queries, you can contact us at

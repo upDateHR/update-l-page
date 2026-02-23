@@ -1,7 +1,7 @@
 const QualifierTest = () => {
   return (
     <section className="">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16 bg-[#FFFFFF]">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-8 md:py-16 bg-[#FFFFFF]">
         
         {/* Heading */}
         <h2 className="text-2xl sm:text-3xl lg:text-4xl text-center font-bold text-gray-900 mb-10 lg:mb-12">

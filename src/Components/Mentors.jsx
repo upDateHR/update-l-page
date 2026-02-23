@@ -10,9 +10,9 @@ const Mentors = () => {
   const infiniteMentors = [...mentors, ...mentors]; // duplicate for infinite effect
 
   return (
-    <section className="bg-gray-50 py-20">
+    <section className="bg-gray-50 py-8 md:py-16">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-14">
+        <h2 className="text-2xl lg:text-4xl font-bold text-center text-gray-900 mb-14">
           Meet Our Industry Experts
         </h2>
 
